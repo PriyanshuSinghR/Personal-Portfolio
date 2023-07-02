@@ -14,10 +14,7 @@
 [Live Project](https://my-portfolio-xi-eight-88.vercel.app/)
 
 ## Screenshots
-<<<<<<< HEAD
 
-=======
->>>>>>> f1579ee99f8da1d66b0007c87281640a8bf1b66c
 ![portfolio](https://github.com/PriyanshuSinghR/Personal-Portfolio/assets/52795506/72b442fa-3f5d-4944-8d03-c59c32fea0fb)
 
 ## Connect with me
