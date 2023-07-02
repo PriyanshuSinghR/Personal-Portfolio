@@ -11,7 +11,7 @@
 
 ## Live Project
 
-[Live Project]([https://7825h.csb.app/](https://my-portfolio-xi-eight-88.vercel.app/))
+[Live Project](https://my-portfolio-xi-eight-88.vercel.app/)
 
 ## Screenshots
 ![portfolio](https://github.com/PriyanshuSinghR/Personal-Portfolio/assets/52795506/72b442fa-3f5d-4944-8d03-c59c32fea0fb)
