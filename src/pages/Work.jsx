@@ -52,7 +52,7 @@ const Work = () => {
                 </span>
                 <div className="pt-8 text-center ">
                   {/* eslint-disable-next-line */}
-                  <Link href={item.github} target="_blank">
+                  <Link to={item.github} target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"
@@ -61,7 +61,7 @@ const Work = () => {
                     </button>
                   </Link>
                   {/* eslint-disable-next-line */}
-                  <Link href={item.live} target="_blank">
+                  <Link to={item.live} target="_blank">
                     <button
                       className="text-center rounded-lg px-4 py-3 m-2
                        bg-white text-gray-700 font-bold text-lg"

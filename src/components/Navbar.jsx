@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link, NavLink } from 'react-router-dom';
+import resume from '../assets/Resume.pdf';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -196,9 +197,8 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] p-4 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <Link
               className="flex justify-between items-center w-full text-gray-300"
-              to="../assets/Resume.pdf"
+              to={resume}
               target="_blank"
-              download
             >
               Resume <BsFillPersonLinesFill size={30} />
             </Link>
