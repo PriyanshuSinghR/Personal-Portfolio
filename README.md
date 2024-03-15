@@ -17,7 +17,7 @@
 
 ![portfolio](https://github.com/PriyanshuSinghR/Personal-Portfolio/assets/52795506/72b442fa-3f5d-4944-8d03-c59c32fea0fb)
 
-## Connect with me
+## Connect with me and others
 
 - [LinkedIn](https://www.linkedin.com/in/priyanshu844/)
 - [Twitter](https://twitter.com/Priyanshu844)
