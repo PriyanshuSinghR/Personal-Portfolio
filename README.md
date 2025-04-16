@@ -1,25 +1,12 @@
-  # My Personal Portfolio
+# React + Vite
 
-- This is my personal Portfolio that will be used for Professional
-- This app is made using React hooks and Dark mode.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tech Stack
+Currently, two official plugins are available:
 
-- React Hooks
-- Tailwind
-- Framer Motion
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Live Project
+## Expanding the ESLint configuration
 
-[Live Project](https://my-portfolio-xi-eight-88.vercel.app/)
-
-## Screenshots
-
-![portfolio](https://github.com/PriyanshuSinghR/Personal-Portfolio/assets/52795506/72b442fa-3f5d-4944-8d03-c59c32fea0fb)
-
-## Connect with me
-
-- [LinkedIn](https://www.linkedin.com/in/priyanshu844/)
-- [Twitter](https://twitter.com/Priyanshu844)
-- [GitHub](https://github.com/PriyanshuSinghR)
-- [Portfolio](https://priyanshu-portfolio.netlify.app/)
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

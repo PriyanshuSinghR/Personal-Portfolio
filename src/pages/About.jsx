@@ -1,5 +1,5 @@
-import React from 'react';
-import Transition from '../components/Transition';
+import React from "react";
+import Transition from "../components/Transition";
 
 const About = () => {
   return (
@@ -20,17 +20,19 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
             <p>
-              Hi. I'm Priyanshu Singh, nice to meet you. Please take a look
-              around.
+              Hi, I’m Priyanshu Singh, a passionate full-stack developer. Glad
+              to have you here. Feel free to explore my work!
             </p>
           </div>
           <div>
             <p>
-              I am a fullStack developer, with a graduated degree and a passion
-              for making website creative with ReactJS and Advance CSS. I
-              working on React since 4 year but still I have to go so far so I
-              always passionate to learn more and sharp my skill as much as
-              possible.
+              I'm a Full-Stack Developer currently working at Chakr Innovation.
+              With expertise in ReactJS, Tailwind CSS, and Django, I've built
+              robust slot booking systems, real-time validated forms, and
+              scalable architectures. Passionate about performance optimization,
+              reusable components, and clean code, I enjoy transforming complex
+              requirements into elegant, responsive web applications. I'm always
+              eager to learn, improve, and contribute to impactful projects.
             </p>
           </div>
         </div>

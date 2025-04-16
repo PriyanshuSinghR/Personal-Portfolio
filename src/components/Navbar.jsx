@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { Link, NavLink } from 'react-router-dom';
-import resume from '../assets/Resume.pdf';
+import React, { useEffect, useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,7 +11,7 @@ const Navbar = () => {
     e.target.checked ? setNav(true) : setNav(false);
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       setTheme(true);
     } else {
       setTheme(false);
@@ -21,9 +20,9 @@ const Navbar = () => {
 
   useEffect(() => {
     if (theme) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [theme]);
 
@@ -132,7 +131,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <nav
         className={`top-0 right-0 w-full bg-white dark:bg-[#0a192f]  p-10 pl-20 fixed h-screen flex flex-col justify-center items-center transition duration-300 ease-in-out  ${
-          nav ? '-translate-y-0 ' : '-translate-y-full'
+          nav ? "-translate-y-0 " : "-translate-y-full"
         }`}
       >
         <NavLink to="/" className="py-6 text-4xl" onClick={hamburgerToggle}>
