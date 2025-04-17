@@ -7,9 +7,12 @@ import Skills from "./pages/Skills";
 import Work from "./pages/Work";
 import { AnimatePresence } from "framer-motion";
 import { ToastContainer } from "react-toastify";
+import { ThemeHandler } from "./components/ThemeHandler";
+import PageTransition from "./components/Transition";
 
 function App() {
   const location = useLocation();
+
   return (
     <div>
       <ToastContainer
@@ -24,14 +27,50 @@ function App() {
         pauseOnHover={false}
         theme="dark"
       />
+      <ThemeHandler />
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/"
+            element={
+              <PageTransition>
+                <Home />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <PageTransition>
+                <About />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/skills"
+            element={
+              <PageTransition>
+                <Skills />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/work"
+            element={
+              <PageTransition>
+                <Work />
+              </PageTransition>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <PageTransition>
+                <Contact />
+              </PageTransition>
+            }
+          />
         </Routes>
       </AnimatePresence>
     </div>

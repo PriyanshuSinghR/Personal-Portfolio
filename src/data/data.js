@@ -5,6 +5,9 @@ import music from "../assets/projects/music.jpg";
 import chat from "../assets/projects/chat.jpg";
 import fitness from "../assets/projects/fitness.jpg";
 import zustand from "../assets/zustand.png";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import {
   SiReact,
@@ -263,5 +266,44 @@ export const skills = [
     lightColor: "#3068B7",
     darkColor: "#3068B7",
     category: "Development Tools",
+  },
+];
+
+export const navLinks = [
+  { path: "/", name: "Home" },
+  { path: "/about", name: "About" },
+  { path: "/skills", name: "Skills" },
+  { path: "/work", name: "Work" },
+  { path: "/contact", name: "Contact" },
+];
+
+export const socialLinks = [
+  {
+    color: "bg-blue-600",
+    icon: FaLinkedin,
+    text: "LinkedIn",
+    link: "https://www.linkedin.com/in/priyanshu844/",
+    hoverColor: "hover:bg-blue-700",
+  },
+  {
+    color: "bg-[#333333]",
+    icon: FaGithub,
+    text: "Github",
+    link: "https://github.com/priyanshuSinghR",
+    hoverColor: "hover:bg-[#222222]",
+  },
+  {
+    color: "bg-[#6fc2b0]",
+    icon: HiOutlineMail,
+    text: "Email",
+    link: "mailto:priyanshusingh.gh@outlook.com",
+    hoverColor: "hover:bg-[#5db19f]",
+  },
+  {
+    color: "bg-[#565f69]",
+    icon: BsFillPersonLinesFill,
+    text: "Resume",
+    link: "https://drive.google.com/file/d/1XNh1OzGay7UGhcSb-f4LRAbnvbq5IMcT/view",
+    hoverColor: "hover:bg-[#464d57]",
   },
 ];

@@ -1,34 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
-import Transition from "../components/Transition";
 import { motion } from "framer-motion";
 import { skills } from "../data/data";
+import { useThemeStore } from "../hooks/useTheme";
 
 const Skills = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [filteredSkills, setFilteredSkills] = useState(skills);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { theme } = useThemeStore();
 
-  useEffect(() => {
-    const checkDarkMode = () => {
-      const isDark = document.documentElement.classList.contains("dark");
-      setIsDarkMode(isDark);
-    };
-
-    checkDarkMode();
-
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.attributeName === "class") {
-          checkDarkMode();
-        }
-      });
-    });
-
-    observer.observe(document.documentElement, { attributes: true });
-
-    return () => observer.disconnect();
-  }, []);
+  const isDarkMode = theme === "dark";
 
   const categories = ["All", ...new Set(skills.map((skill) => skill.category))];
 
@@ -37,6 +18,7 @@ const Skills = () => {
       `These are the technologies I've worked with`,
       `Full stack developer with expertise in React & Node`,
       `Specialized in modern web development`,
+      `Building with the latest frontend and backend technologies`,
     ],
     loop: 0,
   });
@@ -95,7 +77,6 @@ const Skills = () => {
       name="skills"
       className="w-full min-h-screen bg-white dark:bg-[#0a192f] text-slate-700 dark:text-gray-300"
     >
-      <Transition />
       <div className="max-w-[1000px] mx-auto px-8 pt-24 md:pt-32 pb-16 flex flex-col justify-center w-full">
         <motion.div
           initial="hidden"

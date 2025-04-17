@@ -1,5 +1,4 @@
 import React from "react";
-import Transition from "../components/Transition";
 
 const About = () => {
   return (
@@ -7,7 +6,6 @@ const About = () => {
       name="about"
       className="w-full h-screen bg-white dark:bg-[#0a192f] text-slate-700 dark:text-gray-300"
     >
-      <Transition />
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
