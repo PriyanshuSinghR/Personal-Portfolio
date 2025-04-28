@@ -5,7 +5,6 @@ const ToggleTheme = () => {
   const theme = useThemeStore((state) => state.theme);
   const toggleTheme = useThemeStore((state) => state.toggleTheme);
 
-  const hamburgerToggle = (e) => setNav(e.target.checked);
   const isDark = theme === "dark";
   return (
     <label className="swap swap-rotate ">

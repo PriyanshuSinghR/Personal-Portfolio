@@ -27,9 +27,7 @@ import {
   SiZod,
   SiNextdotjs,
   SiTypescript,
-  SiPrisma,
   SiPostgresql,
-  SiSupabase,
   SiVercel,
   SiRedux,
   SiGithub,
@@ -273,6 +271,7 @@ export const navLinks = [
   { path: "/", name: "Home" },
   { path: "/about", name: "About" },
   { path: "/skills", name: "Skills" },
+  { path: "/experience", name: "Experience" },
   { path: "/work", name: "Work" },
   { path: "/contact", name: "Contact" },
 ];
