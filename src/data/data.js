@@ -4,6 +4,7 @@ import appointment from "../assets/projects/appointment.jpg";
 import music from "../assets/projects/music.jpg";
 import chat from "../assets/projects/chat.jpg";
 import fitness from "../assets/projects/fitness.jpg";
+import HeathDose from "../assets/projects/healthDose.jpg";
 import zustand from "../assets/zustand.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -36,47 +37,48 @@ import {
 
 export const projects = [
   {
-    id: 1,
+    name: "Health Dose",
+    image: HeathDose,
+    github: "https://github.com/PriyanshuSinghR/HeathDose",
+    live: "https://heath-dose.vercel.app/",
+    new: true,
+  },
+  {
     name: "Social Media App",
     image: SocialMedia,
     github: "https://github.com/PriyanshuSinghR/social-media",
     live: "https://my-social-media-kappa.vercel.app/",
   },
   {
-    id: 2,
     name: "Sport Store App",
     image: ecommerce,
     github: "https://github.com/PriyanshuSinghR/ecommerce",
     live: "https://e-commerce-six-sable.vercel.app/",
   },
   {
-    id: 3,
     name: "Appointments App",
     image: appointment,
     github: "https://github.com/PriyanshuSinghR/Appointments",
     live: "https://priyanshu-appointment.netlify.app/",
   },
+  // {
+  //   name: "Music App",
+  //   image: music,
+  //   github: "https://github.com/PriyanshuSinghR/boom-music",
+  //   live: "https://boommusic.netlify.app/",
+  // },
   {
-    id: 4,
-    name: "Music App",
-    image: music,
-    github: "https://github.com/PriyanshuSinghR/boom-music",
-    live: "https://boommusic.netlify.app/",
-  },
-  {
-    id: 5,
     name: "Chat App",
     image: chat,
     github: "https://github.com/PriyanshuSinghR/chat-app",
     live: "https://chat-app-a62e4.web.app/",
   },
-  {
-    id: 6,
-    name: "Fitness Freak App",
-    image: fitness,
-    github: "https://github.com/PriyanshuSinghR/fitnessFreak",
-    live: "https://fitnessfreaklife.netlify.app/",
-  },
+  //  {
+  //   name: "Fitness Freak App",
+  //   image: fitness,
+  //   github: "https://github.com/PriyanshuSinghR/fitnessFreak",
+  //   live: "https://fitnessfreaklife.netlify.app/",
+  // },
 ];
 
 export const skills = [
@@ -304,5 +306,63 @@ export const socialLinks = [
     text: "Resume",
     link: "https://drive.google.com/file/d/1XNh1OzGay7UGhcSb-f4LRAbnvbq5IMcT/view",
     hoverColor: "hover:bg-[#464d57]",
+  },
+];
+
+export const experienceDataRaw = [
+  {
+    id: 1,
+    company: "Chakr Innovation",
+    position: "Software Engineer",
+    startDate: "Oct 2023",
+    endDate: "Present",
+    type: "Full-time",
+    location: "Gurugram, Haryana, India · On-site",
+    description:
+      "Leading the design and implementation of comprehensive compliance solutions, ensuring they align with regulatory standards while optimizing operational efficiency across banking systems.",
+    achievements: [
+      "Implemented React Hook Form and Zod validation, reducing submission errors by 40% and accelerating development time by 30%.",
+      "Developed a high-performance ReactJS slot booking system with real-time updates, increasing resource allocation efficiency by 50%.",
+      "Optimized performance through code-splitting and lazy loading, reducing page load times by 20%.",
+    ],
+
+    category: "Full-time",
+  },
+  {
+    id: 2,
+    company: "Chakr Innovation",
+    position: "Software Engineer",
+    startDate: "Oct 2023",
+    endDate: "Jan 2024",
+    type: "Internship",
+    location: "Gurugram, Haryana, India · On-site",
+    description:
+      "Built a dynamic form system using Django and JavaScript, significantly reducing form errors and improving data accuracy.",
+    achievements: [
+      "Developed a React-based booking system with 99.9% uptime, reducing booking conflicts by 40%.",
+      "Created a reusable component library, enhancing development speed and reducing feature delivery time by 25%.",
+      "Optimized front-end workflow, speeding up feature rollouts and improving overall development efficiency.",
+    ],
+
+    category: "Internship",
+  },
+  {
+    id: 3,
+    company: "neoG Camp",
+    position: "Full Stack Web Dev Student",
+    startDate: "Jan 2023",
+    endDate: "Sep 2023",
+    type: "Full-time",
+    location: "Delhi, India · Remote",
+    description:
+      "Completed an intensive full-stack web development bootcamp focused on MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on project-based learning. Developed a strong foundation in front-end and back-end technologies while collaborating with peers on real-world applications.",
+    achievements: [
+      "Built Sportify, an e-commerce platform with React and Node.js featuring real-time inventory management and secure payment processing.",
+      "Developed Amatarasu, a full-featured social media application with user authentication, post creation, and interactive comment systems.",
+      "Created a component library with reusable UI elements following accessibility guidelines and responsive design principles.",
+      "Implemented state management solutions using Redux and Context API across multiple applications with optimized performance.",
+    ],
+
+    category: "Bootcamp",
   },
 ];

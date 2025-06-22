@@ -58,18 +58,28 @@ const Work = () => {
           initial="hidden"
           animate="visible"
         >
-          {projects.map((item) => (
+          {projects.map((item, index) => (
             <motion.div
-              key={item.id}
+              key={index}
               variants={cardVariants}
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.5)",
                 transition: { duration: 0.3 },
               }}
-              className="shadow-lg shadow-[#040c16] group container rounded-md 
-              flex justify-center text-center items-center mx-auto h-64 relative overflow-hidden"
+              className={`shadow-lg shadow-[#040c16] group container rounded-md 
+              flex justify-center text-center items-center mx-auto h-64 relative overflow-hidden
+              ${
+                item.new
+                  ? "border-2 border-green-500"
+                  : "border-2 border-transparent"
+              }`}
             >
+              {item.new === true && (
+                <div className="absolute top-2 right-2 z-20 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full ">
+                  New
+                </div>
+              )}
               <motion.div
                 className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: `url(${item.image})` }}
