@@ -1,9 +1,9 @@
 import SocialMedia from "../assets/projects/socialMedia.jpg";
 import ecommerce from "../assets/projects/ecommerce.jpg";
 import appointment from "../assets/projects/appointment.jpg";
-import music from "../assets/projects/music.jpg";
+import travelDost from "../assets/projects/travelDost.png";
 import chat from "../assets/projects/chat.jpg";
-import fitness from "../assets/projects/fitness.jpg";
+
 import HeathDose from "../assets/projects/healthDose.jpg";
 import zustand from "../assets/zustand.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -36,6 +36,13 @@ import {
 } from "react-icons/si";
 
 export const projects = [
+  {
+    name: "Travel Dost",
+    image: travelDost,
+    github: "https://github.com/PriyanshuSinghR/travel-dost",
+    live: "https://travel-dost-five.vercel.app/",
+    new: true,
+  },
   {
     name: "Health Dose",
     image: HeathDose,
