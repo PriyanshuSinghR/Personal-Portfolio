@@ -326,48 +326,36 @@ export const experienceDataRaw = [
     type: "Full-time",
     location: "Gurugram, Haryana, India · On-site",
     description:
-      "Leading the design and implementation of comprehensive compliance solutions, ensuring they align with regulatory standards while optimizing operational efficiency across banking systems.",
+      "Modernizing enterprise platforms by designing and implementing scalable frontend architecture using React. Focused on building high-performance, compliant operational systems with reusable component architecture, performance optimization, and real-time validation workflows.",
+
     achievements: [
-      "Implemented React Hook Form and Zod validation, reducing submission errors by 40% and accelerating development time by 30%.",
-      "Developed a high-performance ReactJS slot booking system with real-time updates, increasing resource allocation efficiency by 50%.",
-      "Optimized performance through code-splitting and lazy loading, reducing page load times by 20%.",
+      "Modernized enterprise form systems using React Hook Form and Zod validation, reducing form submission errors by ~37% and cutting development time by ~28%.",
+      "Developed robust real-time slot booking system with automated conflict detection, improving resource allocation efficiency by ~42% and reducing booking conflicts by ~38%.",
+      "Optimized application performance through code-splitting, lazy loading, and advanced state management patterns, reducing page load times by ~23%.",
+      "Designed responsive reusable UI component libraries using Tailwind CSS and modern React practices, reducing feature development time by ~26%.",
+      "Led migration of legacy frontend systems to modern React architecture, improving maintainability, scalability, and deployment efficiency.",
+      "Established frontend development standards including responsive layouts, cross-browser compatibility, and reusable design patterns.",
+      "Collaborated with backend systems (Django APIs, real-time validation workflows) to deliver enterprise-grade dashboards and compliance solutions.",
     ],
 
     category: "Full-time",
   },
   {
     id: 2,
-    company: "Chakr Innovation",
-    position: "Software Engineer",
-    startDate: "Oct 2023",
-    endDate: "Jan 2024",
-    type: "Internship",
-    location: "Gurugram, Haryana, India · On-site",
-    description:
-      "Built a dynamic form system using Django and JavaScript, significantly reducing form errors and improving data accuracy.",
-    achievements: [
-      "Developed a React-based booking system with 99.9% uptime, reducing booking conflicts by 40%.",
-      "Created a reusable component library, enhancing development speed and reducing feature delivery time by 25%.",
-      "Optimized front-end workflow, speeding up feature rollouts and improving overall development efficiency.",
-    ],
-
-    category: "Internship",
-  },
-  {
-    id: 3,
     company: "neoG Camp",
     position: "Full Stack Web Dev Student",
     startDate: "Jan 2023",
     endDate: "Sep 2023",
-    type: "Full-time",
-    location: "Delhi, India · Remote",
+    type: "Bootcamp",
+    location: "Remote · India",
     description:
-      "Completed an intensive full-stack web development bootcamp focused on MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on project-based learning. Developed a strong foundation in front-end and back-end technologies while collaborating with peers on real-world applications.",
+      "Completed intensive full-stack web development bootcamp focused on MERN stack with hands-on project-based learning and real-world application development.",
+
     achievements: [
-      "Built Sportify, an e-commerce platform with React and Node.js featuring real-time inventory management and secure payment processing.",
-      "Developed Amatarasu, a full-featured social media application with user authentication, post creation, and interactive comment systems.",
-      "Created a component library with reusable UI elements following accessibility guidelines and responsive design principles.",
-      "Implemented state management solutions using Redux and Context API across multiple applications with optimized performance.",
+      "Built Sportify e-commerce platform with React and Node.js featuring real-time inventory management and secure payment workflows.",
+      "Developed Amatarasu social media application with authentication, posts, and interactive commenting systems.",
+      "Created reusable UI component libraries following accessibility and responsive design principles.",
+      "Implemented state management using Redux and Context API across multiple applications.",
     ],
 
     category: "Bootcamp",
