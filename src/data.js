@@ -1,11 +1,9 @@
-import SocialMedia from "../assets/projects/socialMedia.jpg";
-import ecommerce from "../assets/projects/ecommerce.jpg";
-import appointment from "../assets/projects/appointment.jpg";
-import travelDost from "../assets/projects/travelDost.png";
-import chat from "../assets/projects/chat.jpg";
 
-import HeathDose from "../assets/projects/healthDose.jpg";
-import zustand from "../assets/zustand.png";
+import travelDost from "./assets/projects/travelDost.png";
+
+import HeathDose from "./assets/projects/healthDose.jpg";
+import AlgoJudge from "./assets/projects/algoJudge.png";
+import zustand from "./assets/zustand.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -33,60 +31,119 @@ import {
   SiRedux,
   SiGithub,
   SiShadcnui,
+  SiDocker,
+  SiAmazon,
+  SiRedis
 } from "react-icons/si";
 
 export const projects = [
   {
-    name: "Travel Dost",
+    title: "AI Tender Management System",
+    image: travelDost,
+    github: "",
+    live: "",
+    privateProject: true,
+    featured: true,
+    category: "Enterprise AI Platform",
+    description:
+      "Enterprise-grade AI-powered tender workflow platform with intelligent document ingestion, contextual retrieval, approval workflows, and automated operational pipelines.",
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Django",
+      "PostgreSQL",
+      "Ollama",
+      "ChromaDB",
+      "Redis",
+    ],
+    metrics: [
+      "AI Document Intelligence",
+      "Workflow Automation",
+      "Contextual Retrieval",
+    ],
+  },
+  {
+    title: "AlgoJudge",
+    image: AlgoJudge,
+    github: "https://github.com/PriyanshuSinghR/AlgoJudge",
+    live: "https://algo-judge.vercel.app/",
+    featured: true,
+
+    category: "Developer Platform",
+
+    description:
+      "Docker-powered online coding judge platform supporting secure multi-language code execution, AI hints, submission tracking, and real-time execution workflows.",
+
+    stack: [
+      "React",
+      "Node.js",
+      "Docker",
+      "MongoDB",
+      "Express",
+      "AWS",
+    ],
+
+    metrics: [
+      "Docker Runtime",
+      "Secure Execution",
+      "Real-Time Workflows",
+    ],
+  },
+
+  {
+    title: "Travel Dost",
     image: travelDost,
     github: "https://github.com/PriyanshuSinghR/travel-dost",
     live: "https://travel-dost-five.vercel.app/",
-    new: true,
+    featured: true,
+
+    category: "AI SaaS",
+
+    description:
+      "AI-powered travel planning platform with intelligent itinerary generation, modern UI workflows, and scalable cloud integrations.",
+
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Gemini AI",
+      "Tailwind",
+      "Appwrite",
+      "Stripe",
+    ],
+
+    metrics: [
+      "AI Trip Planning",
+      "Cloud Integrations",
+      "Modern UI",
+    ],
   },
+
   {
-    name: "Health Dose",
+    title: "HealthDose",
     image: HeathDose,
     github: "https://github.com/PriyanshuSinghR/HeathDose",
     live: "https://heath-dose.vercel.app/",
-    new: true,
+
+    category: "Healthcare Platform",
+
+    description:
+      "Modern healthcare management platform focused on scalable appointment systems and user-centric healthcare workflows.",
+
+    stack: [
+      "Next.js",
+      "React",
+      "Tailwind",
+      "Appwrite",
+    ],
+
+    metrics: [
+      "Healthcare Workflow",
+      "Responsive Platform",
+      "Scalable UI",
+    ],
   },
-  {
-    name: "Social Media App",
-    image: SocialMedia,
-    github: "https://github.com/PriyanshuSinghR/social-media",
-    live: "https://my-social-media-kappa.vercel.app/",
-  },
-  {
-    name: "Sport Store App",
-    image: ecommerce,
-    github: "https://github.com/PriyanshuSinghR/ecommerce",
-    live: "https://e-commerce-six-sable.vercel.app/",
-  },
-  {
-    name: "Appointments App",
-    image: appointment,
-    github: "https://github.com/PriyanshuSinghR/Appointments",
-    live: "https://priyanshu-appointment.netlify.app/",
-  },
-  // {
-  //   name: "Music App",
-  //   image: music,
-  //   github: "https://github.com/PriyanshuSinghR/boom-music",
-  //   live: "https://boommusic.netlify.app/",
-  // },
-  {
-    name: "Chat App",
-    image: chat,
-    github: "https://github.com/PriyanshuSinghR/chat-app",
-    live: "https://chat-app-a62e4.web.app/",
-  },
-  //  {
-  //   name: "Fitness Freak App",
-  //   image: fitness,
-  //   github: "https://github.com/PriyanshuSinghR/fitnessFreak",
-  //   live: "https://fitnessfreaklife.netlify.app/",
-  // },
-];
+]
 
 export const skills = [
   {
@@ -274,6 +331,30 @@ export const skills = [
     darkColor: "#3068B7",
     category: "Development Tools",
   },
+  {
+  id: 26,
+  name: "Docker",
+  icon: SiDocker,
+  lightColor: "#2496ED",
+  darkColor: "#2496ED",
+  category: "AI & DevOps",
+  },
+  {
+    id: 27,
+    name: "AWS",
+    icon: SiAmazon,
+    lightColor: "#FF9900",
+    darkColor: "#FF9900",
+    category: "AI & DevOps",
+  },
+  {
+    id: 28,
+    name: "Redis",
+    icon: SiRedis,
+    lightColor: "#DC382D",
+    darkColor: "#DC382D",
+    category: "AI & DevOps",
+  },
 ];
 
 export const navLinks = [
@@ -297,7 +378,7 @@ export const socialLinks = [
     color: "bg-[#333333]",
     icon: FaGithub,
     text: "Github",
-    link: "https://github.com/priyanshuSinghR",
+    link: "https://www.github.com/priyanshuSinghR",
     hoverColor: "hover:bg-[#222222]",
   },
   {
@@ -314,32 +395,66 @@ export const socialLinks = [
     link: "https://drive.google.com/file/d/1XNh1OzGay7UGhcSb-f4LRAbnvbq5IMcT/view",
     hoverColor: "hover:bg-[#464d57]",
   },
+  
 ];
 
 export const experienceDataRaw = [
-  {
+    {
     id: 1,
+    company: "AlgoUniversity",
+    position: "Software Engineering Externalship",
+    startDate: "Jul 2025",
+    endDate: "Present",
+    type: "Externalship",
+    location: "Remote",
+
+    description:
+      "Building scalable developer tooling and secure multi-language code execution systems with modern full-stack technologies and containerized architectures.",
+
+    achievements: [
+      "Built AlgoJudge, a full-stack coding judge platform supporting C++, Python, JavaScript, and Java execution workflows.",
+
+      "Implemented secure Docker-based runtime containers for isolated multi-language code execution using Node.js and Express.js.",
+
+      "Developed interactive coding workflows with Monaco Editor, TanStack Query, AI-powered hints, real-time execution feedback, and submission history tracking.",
+
+      "Containerized backend services and deployed scalable workflows on AWS to improve platform reliability and maintainability.",
+
+      "Designed reusable APIs and execution pipelines for handling compilation, runtime validation, and secure sandboxing.",
+    ],
+
+    category: "Externalship",
+  },
+  {
+    id: 2,
     company: "Chakr Innovation",
     position: "Software Engineer",
     startDate: "Oct 2023",
-    endDate: "Present",
+    endDate: "May 2026",
     type: "Full-time",
     location: "Gurugram, Haryana, India · On-site",
+
     description:
-      "Modernizing enterprise platforms by designing and implementing scalable frontend architecture using React. Focused on building high-performance, compliant operational systems with reusable component architecture, performance optimization, and real-time validation workflows.",
+      "Building enterprise-grade AI-powered workflow systems, intelligent document platforms, and scalable operational dashboards using React, Next.js, Django, PostgreSQL, Docker, Redis, and LLM-based architectures.",
 
     achievements: [
-      "Modernized enterprise form systems using React Hook Form and Zod validation, reducing form submission errors by ~37% and cutting development time by ~28%.",
-      "Developed robust real-time slot booking system with automated conflict detection, improving resource allocation efficiency by ~42% and reducing booking conflicts by ~38%.",
-      "Optimized application performance through code-splitting, lazy loading, and advanced state management patterns, reducing page load times by ~23%.",
-      "Designed responsive reusable UI component libraries using Tailwind CSS and modern React practices, reducing feature development time by ~26%.",
-      "Led migration of legacy frontend systems to modern React architecture, improving maintainability, scalability, and deployment efficiency.",
-      "Established frontend development standards including responsive layouts, cross-browser compatibility, and reusable design patterns.",
-      "Collaborated with backend systems (Django APIs, real-time validation workflows) to deliver enterprise-grade dashboards and compliance solutions.",
+      "Built AI-powered Tender Management System that streamlined the complete tender lifecycle with role-based workflows, centralized dashboards, approval pipelines, and dynamic multi-stage forms.",
+
+      "Developed LLM-based document ingestion workflows using Ollama, ChromaDB, Redis, and SSE for PDF parsing, metadata extraction, contextual search, AI-generated summaries, and workflow auto-filling.",
+
+      "Designed scalable dynamic form engines using React Hook Form, Zod, Tailwind CSS, and Shadcn UI with reusable validations, stage-based access control, and configurable approval workflows.",
+
+      "Improved overall tender processing efficiency by more than 6× through workflow automation, centralized tracking, and intelligent document processing.",
+
+      "Optimized frontend architecture with reusable component systems, lazy loading, code splitting, and real-time state synchronization.",
+
+      "Collaborated across backend APIs, real-time systems, and enterprise operational workflows to deliver scalable production-grade platforms.",
     ],
 
     category: "Full-time",
   },
+
+
   {
     id: 2,
     company: "neoG Camp",
