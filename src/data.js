@@ -2,7 +2,7 @@
 import travelDost from "./assets/projects/travelDost.png";
 
 import HeathDose from "./assets/projects/healthDose.jpg";
-import AlgoJudge from "./assets/projects/algoJudge.png";
+import AlgoJudge from "./assets/projects/algojudge.png";
 import zustand from "./assets/zustand.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
