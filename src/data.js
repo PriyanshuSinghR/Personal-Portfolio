@@ -3,6 +3,7 @@ import travelDost from "./assets/projects/travelDost.png";
 
 import HeathDose from "./assets/projects/healthDose.jpg";
 import AlgoJudge from "./assets/projects/algojudge.png";
+import TMS from "./assets/projects/tms.png";
 import zustand from "./assets/zustand.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -39,7 +40,7 @@ import {
 export const projects = [
   {
     title: "AI Tender Management System",
-    image: travelDost,
+    image: TMS,
     github: "",
     live: "",
     privateProject: true,
